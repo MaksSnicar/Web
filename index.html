@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <button class="login-button">Вхід</button>
+        <h1>Холодна зброя</h1>
+        <div class="mobile-menu-button" onclick="toggleMobileMenu()">Меню</div>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#">Головна</a>
+            <a href="#">Про нас</a>
+            <a href="#">Контакти</a>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <article>
+                <img src="https://images.prom.ua/3214281744_samurajskij-mech-katana.jpg" alt="Картинка продукту">
+                <div class="product-info">
+                    <h2>Катана</h2>
+                    <p>Катана з ножнами</p>
+                    <p>Ціна: $99.99</p>
+                    <button>Купити</button>
+                </div>
+            </article>
+        </section>
+        <section>
+            <article>
+                <img src="https://ir.ozone.ru/s3/multimedia-v/c1000/6622926331.jpg" alt="Картинка продукту">
+                <div class="product-info">
+                    <h2>Катана</h2>
+                    <p>Самурайській меч катана з ножами</p>
+                    <p>Ціна: $199.99</p>
+                    <button>Купити</button>
+                </div>
+            </article>
+        </section>
+        <section>
+            <article>
+                <img src="https://nihonto.net.ua/components/com_jshopping/files/img_products/full_raritetnye-clinki-katani-antikvarnaya-katana-17-vek-0.jpg" alt="Картинка продукту">
+                <div class="product-info">
+                    <h2>Катана</h2>
+                    <p>Катана 17-го століття</p>
+                    <p>Ціна: $599.99</p>
+                    <button>Купити</button>
+                </div>
+            </article>
+        </section>
+        <section>
+            <article>
+                <img src="https://nihonto.net.ua/components/com_jshopping/files/img_products/full_raritetnye-clinki-katani-katana-antikvarnaya-18-vek-0.jpg" alt="Картинка продукту">
+                <div class="product-info">
+                    <h2>Катана</h2>
+                    <p>Катана 18-го століття</p>
+                    <p>Ціна: $1199.99</p>
+                    <button>Купити</button>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <script>
+        function toggleMobileMenu() {
+            var mobileMenu = document.getElementById("mobileMenu");
+            mobileMenu.style.display = (mobileMenu.style.display === "flex") ? "none" : "flex";
+        }
+    </script>
+
+</body>
+</html>
